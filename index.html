@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/all.min.css">
+        <title>Video Player</title>
+    </head>
+    <body>
+        <div class="player">
+
+            <video src="Video/عبد الباسط عبد الصمد _ سورة الضحى والشرح والقدر بطريقته الإعجازية الشهيرة _ جودة عالية HD.mp4"></video>
+
+            <div class="controls">
+
+                <div class="progress">
+
+                    <div class="progress-filled"></div>
+
+                </div>
+
+                <div class="bottom">
+                    <button class="btn toggle" title="Toggle Play"><i class="fa-solid fa-play"></i></button>
+
+                    <input type="range" name="volume" class="slider volume" min="0" max="100" step=".5" value="100">
+
+                    <input type="range" name="playbackRate" class="slider speed" min=".5" max="2" step=".1" value="1">
+
+                    <button class="btn skip" data-skip="-10"><< 10s</button>
+
+                    <button class="btn skip" data-skip="25">25s >></button>
+                    <button class="fullScreen"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
